@@ -94,6 +94,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
 
 # catkin build tools
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    apt-utils \
     python-pyproj \
     python-catkin-tools \
     && apt-get clean
@@ -106,27 +107,8 @@ RUN locale-gen "en_US.UTF-8"
 RUN echo "source /opt/ros/kinetic/setup.bash" >> /root/.bashrc
 
 
-#---------------------------------------------------------------------
-# Upgrade Gazebo
-#---------------------------------------------------------------------
 
-ARG LIBSDFORMAT_VERSION=5
 
-RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list \
- && wget http://packages.osrfoundation.org/gazebo.key -O - | apt-key add - \
- && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    ros-kinetic-gazebo8-plugins \
-    ros-kinetic-gazebo8-ros-pkgs \
-    ros-kinetic-gazebo8-ros-control \
-    libpcap0.8-dev \
-    gazebo8-plugin-base \
-    gazebo8-common \
-    libsdformat${LIBSDFORMAT_VERSION}-dev \
-    libgazebo8-dev \
-    gazebo8 \
- && apt-get clean
-
-RUN echo "source /usr/share/gazebo-8/setup.sh" >> /root/.bashrc
 RUN echo "source /root/catkin_ws/devel/setup.bash" >> /home/$username/.bashrc    
 
 
@@ -138,6 +120,15 @@ RUN rosdep update
 RUN pip install pyaml rospkg catkin_pkg empy
 RUN pip install transformations
 
+RUN cmake --version
+
+RUN apt install -y libprotobuf-dev protobuf-compiler build-essential libssl-dev
+RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; apt remove --purge cmake; hash -r\\
+cd /; wget https://github.com/Kitware/CMake/releases/download/v3.16.5/cmake-3.16.5.tar.gz; tar -zxvf cmake-3.16.5.tar.gz; \
+cd cmake-3.16.5; ./bootstrap; make; sudo make install'
+
+RUN cmake --version
+
 WORKDIR /root
 RUN mkdir -p /root/catkin_ws/src
 WORKDIR /root/catkin_ws/src
@@ -148,14 +139,13 @@ WORKDIR /root/catkin_ws/src
 
 RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd /root/catkin_ws/src; git clone https://github.com/ROBOTIS-GIT/turtlebot3.git; \
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git; git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git; \
-git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git; cd ..; rosdep install --from-paths src -i -y; catkin_make; \
-source /root/catkin_ws/devel/setup.bash; rospack profile'
-
-RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd /root/catkin_ws/src; git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git; \
+git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git; \
 git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git; git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git; \
 git clone https://github.com/ROBOTIS-GIT/open_manipulator.git; git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git; \
 git clone https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git; git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git; \
-cd ..; catkin_make;'
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git; cd ..; rosdep install --from-paths src -i -y; catkin_make; \
+source /root/catkin_ws/devel/setup.bash; rospack profile'
+
 
 RUN apt install -y ros-kinetic-moveit
 RUN apt-get install ros-kinetic-ar-track-alvar-msgs
@@ -169,6 +159,8 @@ EXPOSE 8888
 COPY image /
 ENV HOME /
 ENV SHELL /bin/bash
+
+
 
 # no password and token for jupyter
 ENV JUPYTER_PASSWORD ""
