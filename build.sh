@@ -1,0 +1,1 @@
+sudo docker build -t ros_docker_kinetic .

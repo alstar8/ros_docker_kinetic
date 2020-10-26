@@ -1,0 +1,12 @@
+Gazebo multi-robot simulator, version 9.0.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1603379271 7040518) [Msg] Waiting for master.
+(1603379271 17996706) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1603379271 18022637) [Msg] Publicized address: 172.17.0.8
+(1603379271 466181012) [Err] [OpenAL.cc:84] Unable to open audio device[default]
+ Audio will be disabled.
+(1603379271 501924946) Init world[default]

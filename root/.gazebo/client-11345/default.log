@@ -1,0 +1,13 @@
+Gazebo multi-robot simulator, version 9.0.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+(1603379271 7084130) [Msg] Waiting for master.
+(1603379271 17998381) [Msg] Connected to gazebo master @ http://127.0.0.1:11345
+(1603379271 18026197) [Msg] Publicized address: 172.17.0.8
+(1603379271 18303991) Loaded .ini file from: "/root/.gazebo/gui.ini"
+(1603379271 215814306) [Wrn] [GuiIface.cc:120] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+(1603379272 606920413) No spacenav daemon found. Spacenav functionality is disabled
+(1603379274 548070170) [Err] [ModelDatabase.cc:390] Unable to parse model.config for model[http://gazebosim.org/models/bin_4_dropping_task]

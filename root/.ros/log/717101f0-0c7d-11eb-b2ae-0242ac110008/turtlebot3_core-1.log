@@ -1,0 +1,77 @@
+[rospy.client][INFO] 2020-10-12 12:19:11,595: init_node, name[/turtlebot3_core], pid[12581]
+[xmlrpc][INFO] 2020-10-12 12:19:11,596: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 12:19:11,596: Started XML-RPC server [http://8cb3278195c9:34037/]
+[rospy.init][INFO] 2020-10-12 12:19:11,597: ROS Slave URI: [http://8cb3278195c9:34037/]
+[rospy.impl.masterslave][INFO] 2020-10-12 12:19:11,597: _ready: http://8cb3278195c9:34037/
+[rospy.registration][INFO] 2020-10-12 12:19:11,598: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-10-12 12:19:11,598: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-10-12 12:19:11,697: registered with master
+[rospy.rosout][INFO] 2020-10-12 12:19:11,698: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-12 12:19:11,705: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-12 12:19:11,707: initializing /clock core topic
+[rospy.simtime][INFO] 2020-10-12 12:19:11,711: connected to core topic /clock
+[rosout][INFO] 2020-10-12 12:19:11,716: ROS Serial Python Node
+[rosout][INFO] 2020-10-12 12:19:11,722: Connecting to /dev/ttyACM0 at 115200 baud
+[rosout][ERROR] 2020-10-12 12:19:11,728: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rospy.internal][INFO] 2020-10-12 12:19:11,886: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][ERROR] 2020-10-12 12:19:14,733: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:19:17,738: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:19:20,744: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:19:23,748: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:19:26,752: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:19:29,756: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:19:32,761: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:19:35,765: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rospy.core][INFO] 2020-10-12 12:19:38,741: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-10-12 12:19:38,748: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-10-12 12:19:38,748: signal-2
+[rospy.core][INFO] 2020-10-12 12:19:39,343: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-10-12 12:24:15,130: init_node, name[/turtlebot3_core], pid[12926]
+[xmlrpc][INFO] 2020-10-12 12:24:15,130: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 12:24:15,131: Started XML-RPC server [http://8cb3278195c9:44673/]
+[rospy.init][INFO] 2020-10-12 12:24:15,131: ROS Slave URI: [http://8cb3278195c9:44673/]
+[rospy.impl.masterslave][INFO] 2020-10-12 12:24:15,131: _ready: http://8cb3278195c9:44673/
+[rospy.registration][INFO] 2020-10-12 12:24:15,132: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-10-12 12:24:15,132: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-10-12 12:24:15,231: registered with master
+[rospy.rosout][INFO] 2020-10-12 12:24:15,231: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-12 12:24:15,236: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-12 12:24:15,238: initializing /clock core topic
+[rospy.simtime][INFO] 2020-10-12 12:24:15,242: connected to core topic /clock
+[rosout][INFO] 2020-10-12 12:24:15,246: ROS Serial Python Node
+[rosout][INFO] 2020-10-12 12:24:15,254: Connecting to /dev/ttyACM0 at 115200 baud
+[rosout][ERROR] 2020-10-12 12:24:15,265: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rospy.internal][INFO] 2020-10-12 12:24:15,461: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][ERROR] 2020-10-12 12:24:18,268: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rospy.core][INFO] 2020-10-12 12:24:20,911: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-10-12 12:24:20,918: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-10-12 12:24:20,918: signal-2
+[rospy.core][INFO] 2020-10-12 12:24:21,513: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-10-12 12:24:31,242: init_node, name[/turtlebot3_core], pid[12973]
+[xmlrpc][INFO] 2020-10-12 12:24:31,242: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 12:24:31,243: Started XML-RPC server [http://8cb3278195c9:33689/]
+[rospy.init][INFO] 2020-10-12 12:24:31,244: ROS Slave URI: [http://8cb3278195c9:33689/]
+[rospy.impl.masterslave][INFO] 2020-10-12 12:24:31,244: _ready: http://8cb3278195c9:33689/
+[rospy.registration][INFO] 2020-10-12 12:24:31,246: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-10-12 12:24:31,246: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-10-12 12:24:31,344: registered with master
+[rospy.rosout][INFO] 2020-10-12 12:24:31,344: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-12 12:24:31,350: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-12 12:24:31,352: initializing /clock core topic
+[rospy.simtime][INFO] 2020-10-12 12:24:31,355: connected to core topic /clock
+[rosout][INFO] 2020-10-12 12:24:31,359: ROS Serial Python Node
+[rosout][INFO] 2020-10-12 12:24:31,365: Connecting to /dev/ttyACM0 at 115200 baud
+[rosout][ERROR] 2020-10-12 12:24:31,374: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rospy.internal][INFO] 2020-10-12 12:24:31,588: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][ERROR] 2020-10-12 12:24:34,378: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:24:37,384: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:24:40,390: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:24:43,396: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:24:46,400: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:24:49,403: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:24:52,409: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rosout][ERROR] 2020-10-12 12:24:55,415: Error opening serial: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+[rospy.core][INFO] 2020-10-12 12:24:57,155: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-10-12 12:24:57,158: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-10-12 12:24:57,158: signal-2
+[rospy.core][INFO] 2020-10-12 12:24:58,419: signal_shutdown [atexit]

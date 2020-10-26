@@ -1,0 +1,30 @@
+[roslaunch][INFO] 2020-10-12 11:45:01,634: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2020-10-12 11:45:01,639: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2020-10-12 11:45:01,639: roslaunch starting with args ['/opt/ros/melodic/bin/roslaunch', 'turtlebot3_gazebo', 'turtlebot3_world.launch']
+[roslaunch][INFO] 2020-10-12 11:45:01,639: roslaunch env is {'JUPYTER_TOKEN': '', 'CHALLENGE_CONFIG_FILE': '/habitat-challenge-data/challenge_pointnav2020.local.rgbd.yaml', 'vnc_port': '5905', 'ROS_DISTRO': 'melodic', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'ROSLISP_PACKAGE_DIRECTORIES': '//catkin_ws/devel/share/common-lisp', 'CUDA_VERSION': '10.1.243', 'USER': 'root', 'ROS_PACKAGE_PATH': '//catkin_ws/src:/opt/ros/melodic/share', 'HOME': '/root', 'PYTHONUNBUFFERED': '1', 'CMAKE_PREFIX_PATH': '//catkin_ws/devel:/opt/ros/melodic', 'DISPLAY': ':1', 'JUPYTER_PASSWORD': '', 'LANG': 'C.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'ROS_LOG_FILENAME': '/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/roslaunch-8cb3278195c9-5321.log', 'CUDA_PKG_VERSION': '10-1=10.1.243-1', 'SHLVL': '1', 'SUPERVISOR_ENABLED': '1', 'TERMINATOR_UUID': 'urn:uuid:f9672217-d11a-42f0-8dc5-a917b3787c77', 'NCCL_VERSION': '2.4.8', 'GLOG_minloglevel': '2', 'LD_LIBRARY_PATH': '//catkin_ws/devel/lib:/opt/ros/melodic/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'NVIDIA_VISIBLE_DEVICES': 'all', '_': '/opt/ros/melodic/bin/roslaunch', 'ROS_MASTER_URI': 'http://localhost:11311', 'nv': 'XAUTHORITY=', 'ROS_VERSION': '1', 'PYTHONPATH': '//catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/opt/conda/envs/habitat/bin/python3', 'QT_X11_NO_MITSHM': '1', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PATH': '/opt/ros/melodic/bin:/opt/conda/envs/habitat/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SUPERVISOR_PROCESS_NAME': 'pcmanfm', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator20x1a6021154d881d', 'PKG_CONFIG_PATH': '//catkin_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'LC_ALL': 'C.UTF-8', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,compat32,utility', 'MAGNUM_LOG': 'quiet', 'NVIDIA_REQUIRE_CUDA': 'cuda>=10.1 brand=tesla,driver>=384,driver<385 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411', 'VTE_VERSION': '5202', 'OLDPWD': '//catkin_ws/src', 'HOSTNAME': '8cb3278195c9', 'PWD': '//catkin_ws', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_PYTHON_VERSION': '2', 'COLORTERM': 'truecolor', 'jup_port': '8905', 'SUPERVISOR_GROUP_NAME': 'x'}
+[roslaunch][INFO] 2020-10-12 11:45:01,639: starting in server mode
+[roslaunch.parent][INFO] 2020-10-12 11:45:01,639: starting roslaunch parent run
+[roslaunch][INFO] 2020-10-12 11:45:01,640: loading roscore config file /opt/ros/melodic/etc/ros/roscore.xml
+[roslaunch][INFO] 2020-10-12 11:45:01,792: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2020-10-12 11:45:01,792: loading config file //catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch/turtlebot3_world.launch
+[roslaunch][ERROR] 2020-10-12 11:45:01,796: RLException: Invalid <arg> tag: environment variable 'TURTLEBOT3_MODEL' is not set. 
+
+Arg xml is <arg default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]" name="model"/>
+[roslaunch][ERROR] 2020-10-12 11:45:01,797: The traceback for the exception was written to the log file
+[roslaunch][ERROR] 2020-10-12 11:45:01,798: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py", line 332, in main
+    p.start()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/parent.py", line 289, in start
+    self._start_infrastructure()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/parent.py", line 238, in _start_infrastructure
+    self._load_config()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/parent.py", line 144, in _load_config
+    roslaunch_strs=self.roslaunch_strs, verbose=self.verbose)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/config.py", line 463, in load_config_default
+    raise RLException(e)
+RLException: Invalid <arg> tag: environment variable 'TURTLEBOT3_MODEL' is not set. 
+
+Arg xml is <arg default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]" name="model"/>
+
+[rospy.core][INFO] 2020-10-12 11:45:01,799: signal_shutdown [atexit]

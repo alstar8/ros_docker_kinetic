@@ -1,0 +1,41 @@
+[roslaunch][INFO] 2020-10-12 12:22:45,499: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2020-10-12 12:22:45,505: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2020-10-12 12:22:45,506: roslaunch starting with args ['roscore', '--core']
+[roslaunch][INFO] 2020-10-12 12:22:45,506: roslaunch env is {'JUPYTER_TOKEN': '', 'CHALLENGE_CONFIG_FILE': '/habitat-challenge-data/challenge_pointnav2020.local.rgbd.yaml', 'vnc_port': '5905', 'ROS_DISTRO': 'melodic', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'CUDA_VERSION': '10.1.243', 'USER': 'root', 'ROS_PACKAGE_PATH': '/opt/ros/melodic/share', 'HOME': '/root', 'PYTHONUNBUFFERED': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/melodic', 'DISPLAY': ':1', 'JUPYTER_PASSWORD': '', 'LANG': 'C.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'ROS_LOG_FILENAME': '/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/roslaunch-8cb3278195c9-12844.log', 'CUDA_PKG_VERSION': '10-1=10.1.243-1', 'SHLVL': '1', 'SUPERVISOR_ENABLED': '1', 'TERMINATOR_UUID': 'urn:uuid:5b12259b-e72a-4948-aa60-62ef4fd26709', 'NCCL_VERSION': '2.4.8', 'GLOG_minloglevel': '2', 'LD_LIBRARY_PATH': '/opt/ros/melodic/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'ROS_PYTHON_VERSION': '2', 'NVIDIA_VISIBLE_DEVICES': 'all', '_': '/opt/ros/melodic/bin/roscore', 'ROS_MASTER_URI': 'http://localhost:11311', 'nv': 'XAUTHORITY=', 'ROS_VERSION': '1', 'PYTHONPATH': '/opt/ros/melodic/lib/python2.7/dist-packages:/opt/conda/envs/habitat/bin/python3', 'QT_X11_NO_MITSHM': '1', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PATH': '/opt/ros/melodic/bin:/opt/conda/envs/habitat/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SUPERVISOR_PROCESS_NAME': 'pcmanfm', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator20x1a6021154d881d', 'PKG_CONFIG_PATH': '/opt/ros/melodic/lib/pkgconfig', 'LC_ALL': 'C.UTF-8', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,compat32,utility', 'MAGNUM_LOG': 'quiet', 'NVIDIA_REQUIRE_CUDA': 'cuda>=10.1 brand=tesla,driver>=384,driver<385 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411', 'VTE_VERSION': '5202', 'OLDPWD': '/catkin_ws/src', 'HOSTNAME': '8cb3278195c9', 'PWD': '/catkin_ws', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'TURTLEBOT3_MODEL': 'burger', 'COLORTERM': 'truecolor', 'jup_port': '8905', 'SUPERVISOR_GROUP_NAME': 'x'}
+[roslaunch][INFO] 2020-10-12 12:22:45,506: starting in server mode
+[roslaunch.parent][INFO] 2020-10-12 12:22:45,506: starting roslaunch parent run
+[roslaunch][INFO] 2020-10-12 12:22:45,506: loading roscore config file /opt/ros/melodic/etc/ros/roscore.xml
+[roslaunch][INFO] 2020-10-12 12:22:45,679: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2020-10-12 12:22:45,680: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2020-10-12 12:22:45,680: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2020-10-12 12:22:45,681: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2020-10-12 12:22:45,681: starting parent XML-RPC server
+[roslaunch.server][INFO] 2020-10-12 12:22:45,682: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2020-10-12 12:22:45,682: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2020-10-12 12:22:45,682: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 12:22:45,683: Started XML-RPC server [http://8cb3278195c9:40551/]
+[xmlrpc][INFO] 2020-10-12 12:22:45,683: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2020-10-12 12:22:45,695: started roslaunch server http://8cb3278195c9:40551/
+[roslaunch.parent][INFO] 2020-10-12 12:22:45,695: ... parent XML-RPC server started
+[roslaunch][INFO] 2020-10-12 12:22:45,696: master.is_running[http://8cb3278195c9:11311/]
+[roslaunch][ERROR] 2020-10-12 12:22:45,698: RLException: roscore cannot run as another roscore/master is already running. 
+Please kill other roscore/master processes before relaunching.
+The ROS_MASTER_URI is http://8cb3278195c9:11311/
+[roslaunch][ERROR] 2020-10-12 12:22:45,698: The traceback for the exception was written to the log file
+[roslaunch][ERROR] 2020-10-12 12:22:45,699: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py", line 332, in main
+    p.start()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/parent.py", line 300, in start
+    self.runner.launch()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/launch.py", line 662, in launch
+    self._setup()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/launch.py", line 637, in _setup
+    launched = self._launch_master()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/launch.py", line 397, in _launch_master
+    raise RLException("roscore cannot run as another roscore/master is already running. \nPlease kill other roscore/master processes before relaunching.\nThe ROS_MASTER_URI is %s"%(m.uri))
+RLException: roscore cannot run as another roscore/master is already running. 
+Please kill other roscore/master processes before relaunching.
+The ROS_MASTER_URI is http://8cb3278195c9:11311/
+
+[rospy.core][INFO] 2020-10-12 12:22:45,700: signal_shutdown [atexit]

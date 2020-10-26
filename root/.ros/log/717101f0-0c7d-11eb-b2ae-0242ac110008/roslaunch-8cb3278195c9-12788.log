@@ -1,0 +1,67 @@
+[roslaunch][INFO] 2020-10-12 12:22:06,891: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2020-10-12 12:22:06,898: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2020-10-12 12:22:06,898: roslaunch starting with args ['/opt/ros/melodic/bin/roslaunch', 'open_manipulator_controller', 'open_manipulator_controller.launch', 'use_platform:=false']
+[roslaunch][INFO] 2020-10-12 12:22:06,898: roslaunch env is {'JUPYTER_TOKEN': '', 'CHALLENGE_CONFIG_FILE': '/habitat-challenge-data/challenge_pointnav2020.local.rgbd.yaml', 'vnc_port': '5905', 'ROS_DISTRO': 'melodic', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'ROSLISP_PACKAGE_DIRECTORIES': '//catkin_ws/devel/share/common-lisp', 'CUDA_VERSION': '10.1.243', 'USER': 'root', 'ROS_PACKAGE_PATH': '//catkin_ws/src:/opt/ros/melodic/share', 'HOME': '/root', 'PYTHONUNBUFFERED': '1', 'CMAKE_PREFIX_PATH': '//catkin_ws/devel:/opt/ros/melodic', 'DISPLAY': ':1', 'JUPYTER_PASSWORD': '', 'LANG': 'C.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'ROS_LOG_FILENAME': '/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/roslaunch-8cb3278195c9-12788.log', 'CUDA_PKG_VERSION': '10-1=10.1.243-1', 'SHLVL': '1', 'SUPERVISOR_ENABLED': '1', 'TERMINATOR_UUID': 'urn:uuid:f9672217-d11a-42f0-8dc5-a917b3787c77', 'NCCL_VERSION': '2.4.8', 'GLOG_minloglevel': '2', 'LD_LIBRARY_PATH': '//catkin_ws/devel/lib:/opt/ros/melodic/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'ROS_PYTHON_VERSION': '2', 'NVIDIA_VISIBLE_DEVICES': 'all', '_': '/opt/ros/melodic/bin/roslaunch', 'ROS_MASTER_URI': 'http://localhost:11311', 'nv': 'XAUTHORITY=', 'ROS_VERSION': '1', 'PYTHONPATH': '//catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/opt/conda/envs/habitat/bin/python3', 'QT_X11_NO_MITSHM': '1', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PATH': '/opt/ros/melodic/bin:/opt/conda/envs/habitat/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SUPERVISOR_PROCESS_NAME': 'pcmanfm', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator20x1a6021154d881d', 'PKG_CONFIG_PATH': '//catkin_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'LC_ALL': 'C.UTF-8', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,compat32,utility', 'MAGNUM_LOG': 'quiet', 'NVIDIA_REQUIRE_CUDA': 'cuda>=10.1 brand=tesla,driver>=384,driver<385 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411', 'VTE_VERSION': '5202', 'OLDPWD': '//catkin_ws/src', 'HOSTNAME': '8cb3278195c9', 'PWD': '//catkin_ws', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'TURTLEBOT3_MODEL': 'burger', 'COLORTERM': 'truecolor', 'jup_port': '8905', 'SUPERVISOR_GROUP_NAME': 'x'}
+[roslaunch][INFO] 2020-10-12 12:22:06,898: starting in server mode
+[roslaunch.parent][INFO] 2020-10-12 12:22:06,899: starting roslaunch parent run
+[roslaunch][INFO] 2020-10-12 12:22:06,899: loading roscore config file /opt/ros/melodic/etc/ros/roscore.xml
+[roslaunch][INFO] 2020-10-12 12:22:07,102: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2020-10-12 12:22:07,102: loading config file //catkin_ws/src/open_manipulator/open_manipulator_controller/launch/open_manipulator_controller.launch
+[roslaunch][INFO] 2020-10-12 12:22:07,105: Added node of type [open_manipulator_controller/open_manipulator_controller] in namespace [/]
+[roslaunch][INFO] 2020-10-12 12:22:07,105: ... selected machine [] for node of type [open_manipulator_controller/open_manipulator_controller]
+[roslaunch.pmon][INFO] 2020-10-12 12:22:07,106: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2020-10-12 12:22:07,111: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2020-10-12 12:22:07,111: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2020-10-12 12:22:07,112: starting parent XML-RPC server
+[roslaunch.server][INFO] 2020-10-12 12:22:07,112: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2020-10-12 12:22:07,112: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2020-10-12 12:22:07,112: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 12:22:07,113: Started XML-RPC server [http://8cb3278195c9:39449/]
+[xmlrpc][INFO] 2020-10-12 12:22:07,113: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2020-10-12 12:22:07,125: started roslaunch server http://8cb3278195c9:39449/
+[roslaunch.parent][INFO] 2020-10-12 12:22:07,125: ... parent XML-RPC server started
+[roslaunch][INFO] 2020-10-12 12:22:07,125: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2020-10-12 12:22:07,126: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2020-10-12 12:22:07,127: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2020-10-12 12:22:07,129: setting /roslaunch/uris/host_8cb3278195c9__39449' to http://8cb3278195c9:39449/
+[roslaunch][INFO] 2020-10-12 12:22:07,130: load_parameters starting ...
+[roslaunch][INFO] 2020-10-12 12:22:07,132: ... load_parameters complete
+[roslaunch][INFO] 2020-10-12 12:22:07,132: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2020-10-12 12:22:07,132: ... preparing to launch node of type [open_manipulator_controller/open_manipulator_controller]
+[roslaunch][INFO] 2020-10-12 12:22:07,133: create_node_process: package[open_manipulator_controller] type[open_manipulator_controller] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-10-12 12:22:07,133: process[open_manipulator_controller-1]: env[{'JUPYTER_TOKEN': '', 'CHALLENGE_CONFIG_FILE': '/habitat-challenge-data/challenge_pointnav2020.local.rgbd.yaml', 'HOSTNAME': '8cb3278195c9', 'ROS_DISTRO': 'melodic', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator20x1a6021154d881d', 'COLORTERM': 'truecolor', 'ROSLISP_PACKAGE_DIRECTORIES': '//catkin_ws/devel/share/common-lisp', 'CUDA_VERSION': '10.1.243', 'USER': 'root', 'PATH': '/opt/ros/melodic/bin:/opt/conda/envs/habitat/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOME': '/root', 'PYTHONUNBUFFERED': '1', 'CMAKE_PREFIX_PATH': '//catkin_ws/devel:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/roslaunch-8cb3278195c9-12788.log', 'LANG': 'C.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'CUDA_PKG_VERSION': '10-1=10.1.243-1', 'SHLVL': '1', 'GLOG_minloglevel': '2', 'TERMINATOR_UUID': 'urn:uuid:f9672217-d11a-42f0-8dc5-a917b3787c77', 'NCCL_VERSION': '2.4.8', 'SUPERVISOR_ENABLED': '1', 'DISPLAY': ':1', 'NVIDIA_VISIBLE_DEVICES': 'all', 'MAGNUM_LOG': 'quiet', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_PYTHON_VERSION': '2', 'LC_ALL': 'C.UTF-8', 'JUPYTER_PASSWORD': '', 'PYTHONPATH': '//catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/opt/conda/envs/habitat/bin/python3', 'QT_X11_NO_MITSHM': '1', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'SUPERVISOR_PROCESS_NAME': 'pcmanfm', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'PKG_CONFIG_PATH': '//catkin_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '//catkin_ws/src:/opt/ros/melodic/share', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,compat32,utility', '_': '/opt/ros/melodic/bin/roslaunch', 'LD_LIBRARY_PATH': '//catkin_ws/devel/lib:/opt/ros/melodic/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'NVIDIA_REQUIRE_CUDA': 'cuda>=10.1 brand=tesla,driver>=384,driver<385 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411', 'OLDPWD': '//catkin_ws/src', 'vnc_port': '5905', 'jup_port': '8905', 'PWD': '//catkin_ws', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'nv': 'XAUTHORITY=', 'ROS_VERSION': '1', 'VTE_VERSION': '5202', 'SUPERVISOR_GROUP_NAME': 'x'}]
+[roslaunch][INFO] 2020-10-12 12:22:07,251: process[open_manipulator_controller-1]: args[[u'//catkin_ws/devel/lib/open_manipulator_controller/open_manipulator_controller', '/dev/ttyUSB0', '1000000', u'__name:=open_manipulator_controller']]
+[roslaunch][INFO] 2020-10-12 12:22:07,251: ... created process [open_manipulator_controller-1]
+[roslaunch.pmon][INFO] 2020-10-12 12:22:07,252: ProcessMonitor.register[open_manipulator_controller-1]
+[roslaunch.pmon][INFO] 2020-10-12 12:22:07,252: ProcessMonitor.register[open_manipulator_controller-1] complete
+[roslaunch][INFO] 2020-10-12 12:22:07,252: ... registered process [open_manipulator_controller-1]
+[roslaunch][INFO] 2020-10-12 12:22:07,252: process[open_manipulator_controller-1]: starting os process
+[roslaunch][INFO] 2020-10-12 12:22:07,252: process[open_manipulator_controller-1]: start w/ args [[u'//catkin_ws/devel/lib/open_manipulator_controller/open_manipulator_controller', '/dev/ttyUSB0', '1000000', u'__name:=open_manipulator_controller', u'__log:=/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/open_manipulator_controller-1.log']]
+[roslaunch][INFO] 2020-10-12 12:22:07,252: process[open_manipulator_controller-1]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-10-12 12:22:07,515: process[open_manipulator_controller-1]: started with pid [12803]
+[roslaunch][INFO] 2020-10-12 12:22:07,516: ... successfully launched [open_manipulator_controller-1]
+[roslaunch][INFO] 2020-10-12 12:22:07,516: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2020-10-12 12:22:07,516: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 140562857436928)>
+[roslaunch.parent][INFO] 2020-10-12 12:22:07,516: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2020-10-12 12:22:07,516: spin
+[roslaunch.pmon][INFO] 2020-10-12 12:23:05,254: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 140562857436928)>
+[roslaunch.pmon][INFO] 2020-10-12 12:23:05,332: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140562857436928)>
+[roslaunch.pmon][INFO] 2020-10-12 12:23:05,332: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140562857436928)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7fd755ac4150>]
+[roslaunch.pmon][INFO] 2020-10-12 12:23:05,333: ProcessMonitor exit: killing open_manipulator_controller-1
+[roslaunch][INFO] 2020-10-12 12:23:05,333: [open_manipulator_controller-1] killing on exit
+[roslaunch][INFO] 2020-10-12 12:23:05,335: process[open_manipulator_controller-1]: killing os process with pid[12803] pgid[12803]
+[roslaunch][INFO] 2020-10-12 12:23:05,335: [open_manipulator_controller-1] sending SIGINT to pgid [12803]
+[roslaunch][INFO] 2020-10-12 12:23:05,335: [open_manipulator_controller-1] sent SIGINT to pgid [12803]
+[roslaunch][INFO] 2020-10-12 12:23:05,737: process[open_manipulator_controller-1]: SIGINT killed with return value -11
+[roslaunch.pmon][INFO] 2020-10-12 12:23:05,737: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2020-10-12 12:23:05,737: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2020-10-12 12:23:05,768: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2020-10-12 12:23:05,769: runner.stop()
+[roslaunch][INFO] 2020-10-12 12:23:05,769: shutting down processing monitor...
+[roslaunch][INFO] 2020-10-12 12:23:05,769: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 140562857436928)>
+[roslaunch.pmon][INFO] 2020-10-12 12:23:05,769: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140562857436928)>
+[roslaunch][INFO] 2020-10-12 12:23:05,769: ... shutting down processing monitor complete
+[roslaunch][INFO] 2020-10-12 12:23:05,769: done
+[roslaunch.pmon][INFO] 2020-10-12 12:23:05,770: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140562857436928)>
+[rospy.core][INFO] 2020-10-12 12:23:05,770: signal_shutdown [atexit]

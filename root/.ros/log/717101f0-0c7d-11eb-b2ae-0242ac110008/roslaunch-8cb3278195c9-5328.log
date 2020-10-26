@@ -1,0 +1,111 @@
+[roslaunch][INFO] 2020-10-12 11:45:09,069: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2020-10-12 11:45:09,075: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2020-10-12 11:45:09,075: roslaunch starting with args ['/opt/ros/melodic/bin/roslaunch', 'turtlebot3_gazebo', 'turtlebot3_world.launch']
+[roslaunch][INFO] 2020-10-12 11:45:09,075: roslaunch env is {'JUPYTER_TOKEN': '', 'CHALLENGE_CONFIG_FILE': '/habitat-challenge-data/challenge_pointnav2020.local.rgbd.yaml', 'vnc_port': '5905', 'ROS_DISTRO': 'melodic', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'ROSLISP_PACKAGE_DIRECTORIES': '//catkin_ws/devel/share/common-lisp', 'CUDA_VERSION': '10.1.243', 'USER': 'root', 'ROS_PACKAGE_PATH': '//catkin_ws/src:/opt/ros/melodic/share', 'HOME': '/root', 'PYTHONUNBUFFERED': '1', 'CMAKE_PREFIX_PATH': '//catkin_ws/devel:/opt/ros/melodic', 'DISPLAY': ':1', 'JUPYTER_PASSWORD': '', 'LANG': 'C.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'ROS_LOG_FILENAME': '/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/roslaunch-8cb3278195c9-5328.log', 'CUDA_PKG_VERSION': '10-1=10.1.243-1', 'SHLVL': '1', 'SUPERVISOR_ENABLED': '1', 'TERMINATOR_UUID': 'urn:uuid:f9672217-d11a-42f0-8dc5-a917b3787c77', 'NCCL_VERSION': '2.4.8', 'GLOG_minloglevel': '2', 'LD_LIBRARY_PATH': '//catkin_ws/devel/lib:/opt/ros/melodic/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'ROS_PYTHON_VERSION': '2', 'NVIDIA_VISIBLE_DEVICES': 'all', '_': '/opt/ros/melodic/bin/roslaunch', 'ROS_MASTER_URI': 'http://localhost:11311', 'nv': 'XAUTHORITY=', 'ROS_VERSION': '1', 'PYTHONPATH': '//catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/opt/conda/envs/habitat/bin/python3', 'QT_X11_NO_MITSHM': '1', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PATH': '/opt/ros/melodic/bin:/opt/conda/envs/habitat/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SUPERVISOR_PROCESS_NAME': 'pcmanfm', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator20x1a6021154d881d', 'PKG_CONFIG_PATH': '//catkin_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'LC_ALL': 'C.UTF-8', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,compat32,utility', 'MAGNUM_LOG': 'quiet', 'NVIDIA_REQUIRE_CUDA': 'cuda>=10.1 brand=tesla,driver>=384,driver<385 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411', 'VTE_VERSION': '5202', 'OLDPWD': '//catkin_ws/src', 'HOSTNAME': '8cb3278195c9', 'PWD': '//catkin_ws', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'TURTLEBOT3_MODEL': 'burger', 'COLORTERM': 'truecolor', 'jup_port': '8905', 'SUPERVISOR_GROUP_NAME': 'x'}
+[roslaunch][INFO] 2020-10-12 11:45:09,076: starting in server mode
+[roslaunch.parent][INFO] 2020-10-12 11:45:09,076: starting roslaunch parent run
+[roslaunch][INFO] 2020-10-12 11:45:09,076: loading roscore config file /opt/ros/melodic/etc/ros/roscore.xml
+[roslaunch][INFO] 2020-10-12 11:45:09,224: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2020-10-12 11:45:09,224: loading config file //catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch/turtlebot3_world.launch
+[roslaunch][INFO] 2020-10-12 11:45:09,282: Added node of type [gazebo_ros/gzserver] in namespace [/]
+[roslaunch][INFO] 2020-10-12 11:45:09,283: Added node of type [gazebo_ros/gzclient] in namespace [/]
+[roslaunch][INFO] 2020-10-12 11:45:09,528: Added node of type [gazebo_ros/spawn_model] in namespace [/]
+[roslaunch][INFO] 2020-10-12 11:45:09,528: ... selected machine [] for node of type [gazebo_ros/gzserver]
+[roslaunch][INFO] 2020-10-12 11:45:09,529: ... selected machine [] for node of type [gazebo_ros/gzclient]
+[roslaunch][INFO] 2020-10-12 11:45:09,529: ... selected machine [] for node of type [gazebo_ros/spawn_model]
+[roslaunch.pmon][INFO] 2020-10-12 11:45:09,530: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2020-10-12 11:45:09,531: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2020-10-12 11:45:09,531: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2020-10-12 11:45:09,531: starting parent XML-RPC server
+[roslaunch.server][INFO] 2020-10-12 11:45:09,532: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2020-10-12 11:45:09,532: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2020-10-12 11:45:09,532: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 11:45:09,533: Started XML-RPC server [http://8cb3278195c9:33681/]
+[xmlrpc][INFO] 2020-10-12 11:45:09,534: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2020-10-12 11:45:09,545: started roslaunch server http://8cb3278195c9:33681/
+[roslaunch.parent][INFO] 2020-10-12 11:45:09,546: ... parent XML-RPC server started
+[roslaunch][INFO] 2020-10-12 11:45:09,547: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2020-10-12 11:45:09,549: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2020-10-12 11:45:09,551: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2020-10-12 11:45:09,554: setting /roslaunch/uris/host_8cb3278195c9__33681' to http://8cb3278195c9:33681/
+[roslaunch][INFO] 2020-10-12 11:45:09,556: load_parameters starting ...
+[roslaunch][INFO] 2020-10-12 11:45:09,564: ... load_parameters complete
+[roslaunch][INFO] 2020-10-12 11:45:09,564: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2020-10-12 11:45:09,565: ... preparing to launch node of type [gazebo_ros/gzserver]
+[roslaunch][INFO] 2020-10-12 11:45:09,565: create_node_process: package[gazebo_ros] type[gzserver] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-10-12 11:45:09,565: process[gazebo-1]: env[{'JUPYTER_TOKEN': '', 'CHALLENGE_CONFIG_FILE': '/habitat-challenge-data/challenge_pointnav2020.local.rgbd.yaml', 'HOSTNAME': '8cb3278195c9', 'ROS_DISTRO': 'melodic', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator20x1a6021154d881d', 'COLORTERM': 'truecolor', 'ROSLISP_PACKAGE_DIRECTORIES': '//catkin_ws/devel/share/common-lisp', 'CUDA_VERSION': '10.1.243', 'USER': 'root', 'PATH': '/opt/ros/melodic/bin:/opt/conda/envs/habitat/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOME': '/root', 'PYTHONUNBUFFERED': '1', 'CMAKE_PREFIX_PATH': '//catkin_ws/devel:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/roslaunch-8cb3278195c9-5328.log', 'LANG': 'C.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'CUDA_PKG_VERSION': '10-1=10.1.243-1', 'SHLVL': '1', 'GLOG_minloglevel': '2', 'TERMINATOR_UUID': 'urn:uuid:f9672217-d11a-42f0-8dc5-a917b3787c77', 'NCCL_VERSION': '2.4.8', 'SUPERVISOR_ENABLED': '1', 'DISPLAY': ':1', 'NVIDIA_VISIBLE_DEVICES': 'all', 'MAGNUM_LOG': 'quiet', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_PYTHON_VERSION': '2', 'LC_ALL': 'C.UTF-8', 'JUPYTER_PASSWORD': '', 'PYTHONPATH': '//catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/opt/conda/envs/habitat/bin/python3', 'QT_X11_NO_MITSHM': '1', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'SUPERVISOR_PROCESS_NAME': 'pcmanfm', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'PKG_CONFIG_PATH': '//catkin_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '//catkin_ws/src:/opt/ros/melodic/share', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,compat32,utility', '_': '/opt/ros/melodic/bin/roslaunch', 'LD_LIBRARY_PATH': '//catkin_ws/devel/lib:/opt/ros/melodic/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'NVIDIA_REQUIRE_CUDA': 'cuda>=10.1 brand=tesla,driver>=384,driver<385 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411', 'OLDPWD': '//catkin_ws/src', 'vnc_port': '5905', 'jup_port': '8905', 'PWD': '//catkin_ws', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'nv': 'XAUTHORITY=', 'ROS_VERSION': '1', 'VTE_VERSION': '5202', 'SUPERVISOR_GROUP_NAME': 'x'}]
+[roslaunch][INFO] 2020-10-12 11:45:09,616: process[gazebo-1]: args[[u'/opt/ros/melodic/lib/gazebo_ros/gzserver', '-e', 'ode', '//catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds/turtlebot3_world.world', u'__name:=gazebo']]
+[roslaunch][INFO] 2020-10-12 11:45:09,616: ... created process [gazebo-1]
+[roslaunch.pmon][INFO] 2020-10-12 11:45:09,616: ProcessMonitor.register[gazebo-1]
+[roslaunch.pmon][INFO] 2020-10-12 11:45:09,616: ProcessMonitor.register[gazebo-1] complete
+[roslaunch][INFO] 2020-10-12 11:45:09,616: ... registered process [gazebo-1]
+[roslaunch][INFO] 2020-10-12 11:45:09,616: process[gazebo-1]: starting os process
+[roslaunch][INFO] 2020-10-12 11:45:09,617: process[gazebo-1]: start w/ args [[u'/opt/ros/melodic/lib/gazebo_ros/gzserver', '-e', 'ode', '//catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds/turtlebot3_world.world', u'__name:=gazebo', u'__log:=/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/gazebo-1.log']]
+[roslaunch][INFO] 2020-10-12 11:45:09,617: process[gazebo-1]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-10-12 11:45:09,889: process[gazebo-1]: started with pid [5346]
+[roslaunch][INFO] 2020-10-12 11:45:09,890: ... successfully launched [gazebo-1]
+[roslaunch][INFO] 2020-10-12 11:45:09,890: ... preparing to launch node of type [gazebo_ros/gzclient]
+[roslaunch][INFO] 2020-10-12 11:45:09,890: create_node_process: package[gazebo_ros] type[gzclient] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-10-12 11:45:09,891: process[gazebo_gui-2]: env[{'JUPYTER_TOKEN': '', 'CHALLENGE_CONFIG_FILE': '/habitat-challenge-data/challenge_pointnav2020.local.rgbd.yaml', 'HOSTNAME': '8cb3278195c9', 'ROS_DISTRO': 'melodic', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator20x1a6021154d881d', 'COLORTERM': 'truecolor', 'ROSLISP_PACKAGE_DIRECTORIES': '//catkin_ws/devel/share/common-lisp', 'CUDA_VERSION': '10.1.243', 'USER': 'root', 'PATH': '/opt/ros/melodic/bin:/opt/conda/envs/habitat/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOME': '/root', 'PYTHONUNBUFFERED': '1', 'CMAKE_PREFIX_PATH': '//catkin_ws/devel:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/roslaunch-8cb3278195c9-5328.log', 'LANG': 'C.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'CUDA_PKG_VERSION': '10-1=10.1.243-1', 'SHLVL': '1', 'GLOG_minloglevel': '2', 'TERMINATOR_UUID': 'urn:uuid:f9672217-d11a-42f0-8dc5-a917b3787c77', 'NCCL_VERSION': '2.4.8', 'SUPERVISOR_ENABLED': '1', 'DISPLAY': ':1', 'NVIDIA_VISIBLE_DEVICES': 'all', 'MAGNUM_LOG': 'quiet', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_PYTHON_VERSION': '2', 'LC_ALL': 'C.UTF-8', 'JUPYTER_PASSWORD': '', 'PYTHONPATH': '//catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/opt/conda/envs/habitat/bin/python3', 'QT_X11_NO_MITSHM': '1', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'SUPERVISOR_PROCESS_NAME': 'pcmanfm', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'PKG_CONFIG_PATH': '//catkin_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '//catkin_ws/src:/opt/ros/melodic/share', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,compat32,utility', '_': '/opt/ros/melodic/bin/roslaunch', 'LD_LIBRARY_PATH': '//catkin_ws/devel/lib:/opt/ros/melodic/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'NVIDIA_REQUIRE_CUDA': 'cuda>=10.1 brand=tesla,driver>=384,driver<385 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411', 'OLDPWD': '//catkin_ws/src', 'vnc_port': '5905', 'jup_port': '8905', 'PWD': '//catkin_ws', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'nv': 'XAUTHORITY=', 'ROS_VERSION': '1', 'VTE_VERSION': '5202', 'SUPERVISOR_GROUP_NAME': 'x'}]
+[roslaunch][INFO] 2020-10-12 11:45:09,893: process[gazebo_gui-2]: args[[u'/opt/ros/melodic/lib/gazebo_ros/gzclient', u'__name:=gazebo_gui']]
+[roslaunch][INFO] 2020-10-12 11:45:09,893: ... created process [gazebo_gui-2]
+[roslaunch.pmon][INFO] 2020-10-12 11:45:09,894: ProcessMonitor.register[gazebo_gui-2]
+[roslaunch.pmon][INFO] 2020-10-12 11:45:09,894: ProcessMonitor.register[gazebo_gui-2] complete
+[roslaunch][INFO] 2020-10-12 11:45:09,894: ... registered process [gazebo_gui-2]
+[roslaunch][INFO] 2020-10-12 11:45:09,894: process[gazebo_gui-2]: starting os process
+[roslaunch][INFO] 2020-10-12 11:45:09,894: process[gazebo_gui-2]: start w/ args [[u'/opt/ros/melodic/lib/gazebo_ros/gzclient', u'__name:=gazebo_gui', u'__log:=/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/gazebo_gui-2.log']]
+[roslaunch][INFO] 2020-10-12 11:45:09,895: process[gazebo_gui-2]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-10-12 11:45:10,168: process[gazebo_gui-2]: started with pid [5351]
+[roslaunch][INFO] 2020-10-12 11:45:10,168: ... successfully launched [gazebo_gui-2]
+[roslaunch][INFO] 2020-10-12 11:45:10,168: ... preparing to launch node of type [gazebo_ros/spawn_model]
+[roslaunch][INFO] 2020-10-12 11:45:10,169: create_node_process: package[gazebo_ros] type[spawn_model] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-10-12 11:45:10,169: process[spawn_urdf-3]: env[{'JUPYTER_TOKEN': '', 'CHALLENGE_CONFIG_FILE': '/habitat-challenge-data/challenge_pointnav2020.local.rgbd.yaml', 'HOSTNAME': '8cb3278195c9', 'ROS_DISTRO': 'melodic', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator20x1a6021154d881d', 'COLORTERM': 'truecolor', 'ROSLISP_PACKAGE_DIRECTORIES': '//catkin_ws/devel/share/common-lisp', 'CUDA_VERSION': '10.1.243', 'USER': 'root', 'PATH': '/opt/ros/melodic/bin:/opt/conda/envs/habitat/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HOME': '/root', 'PYTHONUNBUFFERED': '1', 'CMAKE_PREFIX_PATH': '//catkin_ws/devel:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/roslaunch-8cb3278195c9-5328.log', 'LANG': 'C.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'CUDA_PKG_VERSION': '10-1=10.1.243-1', 'SHLVL': '1', 'GLOG_minloglevel': '2', 'TERMINATOR_UUID': 'urn:uuid:f9672217-d11a-42f0-8dc5-a917b3787c77', 'NCCL_VERSION': '2.4.8', 'SUPERVISOR_ENABLED': '1', 'DISPLAY': ':1', 'NVIDIA_VISIBLE_DEVICES': 'all', 'MAGNUM_LOG': 'quiet', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_PYTHON_VERSION': '2', 'LC_ALL': 'C.UTF-8', 'JUPYTER_PASSWORD': '', 'PYTHONPATH': '//catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages:/opt/conda/envs/habitat/bin/python3', 'QT_X11_NO_MITSHM': '1', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'SUPERVISOR_PROCESS_NAME': 'pcmanfm', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'PKG_CONFIG_PATH': '//catkin_ws/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '//catkin_ws/src:/opt/ros/melodic/share', 'NVIDIA_DRIVER_CAPABILITIES': 'compute,utility,graphics,compat32,utility', '_': '/opt/ros/melodic/bin/roslaunch', 'LD_LIBRARY_PATH': '//catkin_ws/devel/lib:/opt/ros/melodic/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'NVIDIA_REQUIRE_CUDA': 'cuda>=10.1 brand=tesla,driver>=384,driver<385 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411', 'OLDPWD': '//catkin_ws/src', 'vnc_port': '5905', 'jup_port': '8905', 'PWD': '//catkin_ws', 'TURTLEBOT3_MODEL': 'burger', 'ROS_MASTER_URI': 'http://localhost:11311', 'nv': 'XAUTHORITY=', 'ROS_VERSION': '1', 'VTE_VERSION': '5202', 'SUPERVISOR_GROUP_NAME': 'x'}]
+[roslaunch][INFO] 2020-10-12 11:45:10,170: process[spawn_urdf-3]: args[[u'/opt/ros/melodic/lib/gazebo_ros/spawn_model', '-urdf', '-model', 'turtlebot3_burger', '-x', '-2.0', '-y', '-0.5', '-z', '0.0', '-param', 'robot_description', u'__name:=spawn_urdf']]
+[roslaunch][INFO] 2020-10-12 11:45:10,170: ... created process [spawn_urdf-3]
+[roslaunch.pmon][INFO] 2020-10-12 11:45:10,170: ProcessMonitor.register[spawn_urdf-3]
+[roslaunch.pmon][INFO] 2020-10-12 11:45:10,170: ProcessMonitor.register[spawn_urdf-3] complete
+[roslaunch][INFO] 2020-10-12 11:45:10,170: ... registered process [spawn_urdf-3]
+[roslaunch][INFO] 2020-10-12 11:45:10,170: process[spawn_urdf-3]: starting os process
+[roslaunch][INFO] 2020-10-12 11:45:10,171: process[spawn_urdf-3]: start w/ args [[u'/opt/ros/melodic/lib/gazebo_ros/spawn_model', '-urdf', '-model', 'turtlebot3_burger', '-x', '-2.0', '-y', '-0.5', '-z', '0.0', '-param', 'robot_description', u'__name:=spawn_urdf', u'__log:=/root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/spawn_urdf-3.log']]
+[roslaunch][INFO] 2020-10-12 11:45:10,171: process[spawn_urdf-3]: cwd will be [/root/.ros]
+[roslaunch][INFO] 2020-10-12 11:45:10,443: process[spawn_urdf-3]: started with pid [5389]
+[roslaunch][INFO] 2020-10-12 11:45:10,443: ... successfully launched [spawn_urdf-3]
+[roslaunch][INFO] 2020-10-12 11:45:10,443: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2020-10-12 11:45:10,443: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 140652049762048)>
+[roslaunch.parent][INFO] 2020-10-12 11:45:10,443: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2020-10-12 11:45:10,443: spin
+[roslaunch][INFO] 2020-10-12 11:45:11,938: [spawn_urdf-3] process has finished cleanly
+log file: /root/.ros/log/717101f0-0c7d-11eb-b2ae-0242ac110008/spawn_urdf-3*.log
+[roslaunch.pmon][INFO] 2020-10-12 11:45:11,938: ProcessMonitor.unregister[spawn_urdf-3] starting
+[roslaunch.pmon][INFO] 2020-10-12 11:45:11,938: ProcessMonitor.unregister[spawn_urdf-3] complete
+[roslaunch.pmon][INFO] 2020-10-12 11:47:01,703: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 140652049762048)>
+[roslaunch.pmon][INFO] 2020-10-12 11:47:01,775: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140652049762048)>
+[roslaunch.pmon][INFO] 2020-10-12 11:47:01,775: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140652049762048)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7fec1b9940d0>, <roslaunch.nodeprocess.LocalProcess object at 0x7fec1b9e5ed0>]
+[roslaunch.pmon][INFO] 2020-10-12 11:47:01,781: ProcessMonitor exit: killing gazebo_gui-2
+[roslaunch][INFO] 2020-10-12 11:47:01,782: [gazebo_gui-2] killing on exit
+[roslaunch][INFO] 2020-10-12 11:47:01,782: process[gazebo_gui-2]: killing os process with pid[5351] pgid[5351]
+[roslaunch][INFO] 2020-10-12 11:47:01,782: [gazebo_gui-2] sending SIGINT to pgid [5351]
+[roslaunch.pmon][INFO] 2020-10-12 11:47:01,782: ProcessMonitor exit: killing gazebo-1
+[roslaunch][INFO] 2020-10-12 11:47:01,782: [gazebo_gui-2] sent SIGINT to pgid [5351]
+[roslaunch][INFO] 2020-10-12 11:47:01,783: [gazebo-1] killing on exit
+[roslaunch][INFO] 2020-10-12 11:47:01,784: process[gazebo-1]: killing os process with pid[5346] pgid[5346]
+[roslaunch][INFO] 2020-10-12 11:47:01,784: [gazebo-1] sending SIGINT to pgid [5346]
+[roslaunch][INFO] 2020-10-12 11:47:01,784: [gazebo-1] sent SIGINT to pgid [5346]
+[roslaunch][ERROR] 2020-10-12 11:47:16,804: [gazebo_gui-2] escalating to SIGTERM
+[roslaunch][INFO] 2020-10-12 11:47:16,807: [gazebo_gui-2] sent SIGTERM to pgid [5351]
+[roslaunch][INFO] 2020-10-12 11:47:16,807: process[gazebo_gui-2]: SIGTERM killed with return value -15
+[roslaunch][ERROR] 2020-10-12 11:47:16,809: [gazebo-1] escalating to SIGTERM
+[roslaunch][INFO] 2020-10-12 11:47:16,810: [gazebo-1] sent SIGTERM to pgid [5346]
+[roslaunch][INFO] 2020-10-12 11:47:17,011: process[gazebo-1]: SIGTERM killed with return value -15
+[roslaunch.pmon][INFO] 2020-10-12 11:47:17,011: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2020-10-12 11:47:17,012: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2020-10-12 11:47:17,052: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2020-10-12 11:47:17,053: runner.stop()
+[roslaunch][INFO] 2020-10-12 11:47:17,053: shutting down processing monitor...
+[roslaunch][INFO] 2020-10-12 11:47:17,053: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 140652049762048)>
+[roslaunch.pmon][INFO] 2020-10-12 11:47:17,053: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140652049762048)>
+[roslaunch][INFO] 2020-10-12 11:47:17,053: ... shutting down processing monitor complete
+[roslaunch][INFO] 2020-10-12 11:47:17,053: done
+[roslaunch.pmon][INFO] 2020-10-12 11:47:17,053: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140652049762048)>
+[rospy.core][INFO] 2020-10-12 11:47:17,054: signal_shutdown [atexit]

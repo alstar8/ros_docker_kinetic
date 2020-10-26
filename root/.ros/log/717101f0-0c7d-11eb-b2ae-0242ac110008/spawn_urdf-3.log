@@ -1,0 +1,144 @@
+[rospy.client][INFO] 2020-10-12 11:45:11,192: init_node, name[/spawn_urdf], pid[5389]
+[xmlrpc][INFO] 2020-10-12 11:45:11,192: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 11:45:11,193: Started XML-RPC server [http://8cb3278195c9:44517/]
+[rospy.init][INFO] 2020-10-12 11:45:11,193: ROS Slave URI: [http://8cb3278195c9:44517/]
+[rospy.impl.masterslave][INFO] 2020-10-12 11:45:11,193: _ready: http://8cb3278195c9:44517/
+[xmlrpc][INFO] 2020-10-12 11:45:11,194: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-12 11:45:11,195: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-12 11:45:11,294: registered with master
+[rospy.rosout][INFO] 2020-10-12 11:45:11,294: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-12 11:45:11,297: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-12 11:45:11,298: initializing /clock core topic
+[rospy.simtime][INFO] 2020-10-12 11:45:11,300: connected to core topic /clock
+[rosout][INFO] 2020-10-12 11:45:11,302: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2020-10-12 11:45:11,308: Waiting for service /gazebo/spawn_urdf_model
+[rosout][INFO] 2020-10-12 11:45:11,309: Calling service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2020-10-12 11:45:11,331: topic[/clock] adding connection to [http://8cb3278195c9:35479/], count 0
+[rospy.internal][INFO] 2020-10-12 11:45:11,539: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-10-12 11:45:11,716: Spawn status: SpawnModel: Successfully spawned entity
+[rospy.core][INFO] 2020-10-12 11:45:11,719: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-12 11:45:11,723: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-12 11:45:11,724: topic[/clock] removing connection to http://8cb3278195c9:35479/
+[rospy.internal][WARNING] 2020-10-12 11:45:11,738: Unknown error initiating TCP/IP socket to 8cb3278195c9:48703 (http://8cb3278195c9:35479/): Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 562, in connect
+    self.read_header()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 657, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2020-10-12 11:45:11,739: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 846, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.impl.masterslave][INFO] 2020-10-12 11:45:11,739: atexit
+[rospy.client][INFO] 2020-10-12 11:52:50,876: init_node, name[/spawn_urdf], pid[7358]
+[xmlrpc][INFO] 2020-10-12 11:52:50,876: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 11:52:50,877: Started XML-RPC server [http://8cb3278195c9:36365/]
+[rospy.init][INFO] 2020-10-12 11:52:50,877: ROS Slave URI: [http://8cb3278195c9:36365/]
+[rospy.impl.masterslave][INFO] 2020-10-12 11:52:50,878: _ready: http://8cb3278195c9:36365/
+[xmlrpc][INFO] 2020-10-12 11:52:50,879: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-12 11:52:50,879: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-12 11:52:50,978: registered with master
+[rospy.rosout][INFO] 2020-10-12 11:52:50,978: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-12 11:52:50,981: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-12 11:52:50,983: initializing /clock core topic
+[rospy.simtime][INFO] 2020-10-12 11:52:50,984: connected to core topic /clock
+[rosout][INFO] 2020-10-12 11:52:50,986: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2020-10-12 11:52:50,999: Waiting for service /gazebo/spawn_urdf_model
+[rosout][INFO] 2020-10-12 11:52:51,002: Calling service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2020-10-12 11:52:51,026: topic[/clock] adding connection to [http://8cb3278195c9:41949/], count 0
+[rospy.internal][INFO] 2020-10-12 11:52:51,188: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-10-12 11:52:51,250: Spawn status: SpawnModel: Successfully spawned entity
+[rospy.core][INFO] 2020-10-12 11:52:51,251: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-12 11:52:51,255: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-12 11:52:51,256: topic[/clock] removing connection to http://8cb3278195c9:41949/
+[rospy.topics][ERROR] 2020-10-12 11:52:51,257: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 846, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.impl.masterslave][INFO] 2020-10-12 11:52:51,257: atexit
+[rospy.internal][WARNING] 2020-10-12 11:52:51,257: Unknown error initiating TCP/IP socket to 8cb3278195c9:42605 (http://8cb3278195c9:41949/): Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 562, in connect
+    self.read_header()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 657, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.client][INFO] 2020-10-12 12:25:55,675: init_node, name[/spawn_urdf], pid[13049]
+[xmlrpc][INFO] 2020-10-12 12:25:55,675: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 12:25:55,676: Started XML-RPC server [http://8cb3278195c9:37609/]
+[rospy.init][INFO] 2020-10-12 12:25:55,676: ROS Slave URI: [http://8cb3278195c9:37609/]
+[rospy.impl.masterslave][INFO] 2020-10-12 12:25:55,676: _ready: http://8cb3278195c9:37609/
+[rospy.registration][INFO] 2020-10-12 12:25:55,677: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-10-12 12:25:55,677: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-10-12 12:25:55,776: registered with master
+[rospy.rosout][INFO] 2020-10-12 12:25:55,777: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-12 12:25:55,780: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-12 12:25:55,781: initializing /clock core topic
+[rospy.simtime][INFO] 2020-10-12 12:25:55,783: connected to core topic /clock
+[rosout][INFO] 2020-10-12 12:25:55,786: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2020-10-12 12:25:55,795: Waiting for service /gazebo/spawn_urdf_model
+[rosout][INFO] 2020-10-12 12:25:55,797: Calling service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2020-10-12 12:25:55,818: topic[/clock] adding connection to [http://8cb3278195c9:42825/], count 0
+[rospy.internal][INFO] 2020-10-12 12:25:56,024: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-10-12 12:25:56,040: Spawn status: SpawnModel: Successfully spawned entity
+[rospy.core][INFO] 2020-10-12 12:25:56,042: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-12 12:25:56,045: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-12 12:25:56,045: topic[/clock] removing connection to http://8cb3278195c9:42825/
+[rospy.internal][WARNING] 2020-10-12 12:25:56,046: Unknown error initiating TCP/IP socket to 8cb3278195c9:54421 (http://8cb3278195c9:42825/): Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 562, in connect
+    self.read_header()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 657, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2020-10-12 12:25:56,046: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 846, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.impl.masterslave][INFO] 2020-10-12 12:25:56,047: atexit
+[rospy.client][INFO] 2020-10-12 12:29:37,096: init_node, name[/spawn_urdf], pid[16617]
+[xmlrpc][INFO] 2020-10-12 12:29:37,096: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-12 12:29:37,097: Started XML-RPC server [http://8cb3278195c9:38621/]
+[rospy.init][INFO] 2020-10-12 12:29:37,097: ROS Slave URI: [http://8cb3278195c9:38621/]
+[rospy.impl.masterslave][INFO] 2020-10-12 12:29:37,097: _ready: http://8cb3278195c9:38621/
+[rospy.registration][INFO] 2020-10-12 12:29:37,098: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-10-12 12:29:37,098: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-10-12 12:29:37,198: registered with master
+[rospy.rosout][INFO] 2020-10-12 12:29:37,198: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-12 12:29:37,202: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-12 12:29:37,203: initializing /clock core topic
+[rospy.simtime][INFO] 2020-10-12 12:29:37,204: connected to core topic /clock
+[rosout][INFO] 2020-10-12 12:29:37,207: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2020-10-12 12:29:37,223: Waiting for service /gazebo/spawn_urdf_model
+[rosout][INFO] 2020-10-12 12:29:37,226: Calling service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2020-10-12 12:29:37,250: topic[/clock] adding connection to [http://8cb3278195c9:45469/], count 0
+[rospy.internal][INFO] 2020-10-12 12:29:37,408: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-10-12 12:29:37,427: Spawn status: SpawnModel: Successfully spawned entity
+[rospy.core][INFO] 2020-10-12 12:29:37,429: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-12 12:29:37,431: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-12 12:29:37,431: topic[/clock] removing connection to http://8cb3278195c9:45469/
+[rospy.internal][WARNING] 2020-10-12 12:29:37,432: Unknown error initiating TCP/IP socket to 8cb3278195c9:32823 (http://8cb3278195c9:45469/): Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 562, in connect
+    self.read_header()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 657, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2020-10-12 12:29:37,432: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 846, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.impl.masterslave][INFO] 2020-10-12 12:29:37,433: atexit
