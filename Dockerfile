@@ -151,8 +151,6 @@ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git; git clone https://
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git; cd ..; rosdep install --from-paths src -i -y; catkin_make; \
 source /root/catkin_ws/devel/setup.bash; rospack profile'
 
-#RUN echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
-
 RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd /root/catkin_ws/src; git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git; \
 git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git; git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git; \
 git clone https://github.com/ROBOTIS-GIT/open_manipulator.git; git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git; \
@@ -161,12 +159,6 @@ cd ..; catkin_make;'
 
 RUN apt install -y ros-kinetic-moveit
 RUN apt-get install ros-kinetic-ar-track-alvar-msgs
-
-#RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd /root/catkin_ws/src; git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git; \
-#git clone https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git; git clone https://github.com/ROBOTIS-GIT/open_manipulator_dependencies.git; \
-#apt install -y ros-kinetic-ros-control* && ros-kinetic-control* && ros-kinetic-moveit*; \
-#cd ..; catkin_make'
-
 
 
 # vnc port
@@ -187,5 +179,6 @@ WORKDIR /
 
 ENTRYPOINT ["/startup.sh"]
 
-#roslaunch turtlebot3_gazebo turtlebot3_world.launch
-#roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
+#export TURTLEBOT3_MODEL=waffle
+#roslaunch turtlebot3_fake turtlebot3_fake.launch
+#roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
