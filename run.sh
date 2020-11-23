@@ -1,4 +1,4 @@
-docker run --rm --name ros_docker_kinetic_alstar \
+docker run --rm --name ros_docker_kinetic_alstar2 \
 --env="DISPLAY=$DISPLAY" \
 --env="QT_X11_NO_MITSHM=1" \
 --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \

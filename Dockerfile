@@ -230,7 +230,11 @@ RUN apt install -y ros-kinetic-moveit
 RUN apt-get install ros-kinetic-ar-track-alvar-msgs
 
 RUN pip install --use-feature=2020-resolver jupyterlab
-RUN pip install opencv-contrib-python opencv-python==4.2.0.34 transformations
+RUN pip install --use-feature=2020-resolver opencv-contrib-python transformations
+
+RUN apt-get install -y ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
+RUN apt-get install -y ros-kinetic-cartographer ros-kinetic-cartographer-ros ros-kinetic-cartographer-ros-msgs ros-kinetic-cartographer-rviz ros-kinetic-hector-mapping ros-kinetic-slam-karto ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
+
 
 
 
@@ -262,4 +266,7 @@ ENTRYPOINT ["/startup.sh"]
 #roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 #roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
 #roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
-#rostopic pub -1 /cmd_vel geometry_msgs/Twist -- '[1.0, 0.0, 0.0]' '[0.0, 0.0, 1.0]'
+#rostopic pub -1 /cmd_vel geometry_msgs/Twist -- '[0.0, 0.0, 0.0]' '[0.0, 0.0, 0.0]'
+
+
+#roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
